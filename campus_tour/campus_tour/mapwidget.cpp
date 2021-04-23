@@ -1,5 +1,5 @@
 #include "mapwidget.h"
-#include <QSlider>         //滑动条
+//#include <QSlider>
 #include <QGridLayout>
 #include <QFile>
 #include <QTextStream>
@@ -8,7 +8,7 @@
 
 MapWidget::MapWidget(){ //读取地图信息——用于描述地图信息的文件
     readMap();
-    zoom=50;
+    zoom= 60;
     int wid= map.width();
     int hei=map.height();
 
@@ -26,9 +26,9 @@ MapWidget::MapWidget(){ //读取地图信息——用于描述地图信息的文
 
 }
 
-void MapWidget::readMap(){
+void MapWidget::readMap(){  //读文件信息
     QString name;
-    QFile mapFile("info.txt");
+    QFile mapFile("campus_info.txt");
 
     int ready = mapFile.open(QIODevice::ReadOnly);
     if(ready){
@@ -45,7 +45,10 @@ void MapWidget::drawBackground(QPainter * painter, const QRectF &rect){
     painter->drawPixmap(int (sceneRect().left()) + 10, int(sceneRect().top()) - 10, map);
 }
 
-void MapWidget::mouseMoveEvent(QMouseEvent* event){
+
+//处理图片——把输入的坐标和图片中实际坐标转换，待修改
+
+void MapWidget::mouseMoveEvent(QMouseEvent* event){ //鼠标&坐标
 
     QPoint viewPoint = event->pos();
     viewcoord->setText(QString::number(viewPoint.x()) + "," + QString::number(viewPoint.y()));
@@ -57,7 +60,7 @@ void MapWidget::mouseMoveEvent(QMouseEvent* event){
     mapCoord->setText(QString::number(xy.x()) + "," + QString::number(xy.y()));
 }
 
-QPointF MapWidget::mapToMap(QPointF m){
+QPointF MapWidget::mapToMap(QPointF m){     //实际值和坐标转换
     QPointF xy;
     qreal w = sceneRect().width();
     qreal h = sceneRect().height();
