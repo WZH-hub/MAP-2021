@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1262</width>
+    <height>779</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1262</width>
+    <height>779</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1271</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="widget">
+     <attribute name="title">
+      <string>选项</string>
+     </attribute>
+     <widget class="QComboBox" name="comboBox_4">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>100</y>
+        <width>151</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>导航策略</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>最短距离策略</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>最短时间策略</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>交通工具的最短时间策略</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>451</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <item>
+          <property name="text">
+           <string>起点</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>医务室</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>运动场</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>雁北园北区</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_2">
+         <item>
+          <property name="text">
+           <string>必经点（无）</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>医务室</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>运动场</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>雁北园北区</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_3">
+         <item>
+          <property name="text">
+           <string>终点</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>医务室</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>运动场</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>雁北园北区</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <property name="styleSheet">
+      <string notr="true">image: url(:/new/map.jpeg);</string>
+     </property>
+     <attribute name="title">
+      <string>map</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

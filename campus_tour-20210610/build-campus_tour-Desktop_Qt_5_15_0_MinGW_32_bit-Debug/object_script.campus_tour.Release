@@ -1,0 +1,10 @@
+release/dialog.o
+release/findShortestPath.o
+release/insidewidget.o
+release/main.o
+release/mainwindow.o
+release/naviAction.o
+release/setpos.o
+release/qrc_Resources.o
+release/moc_insidewidget.o
+release/moc_mainwindow.o
