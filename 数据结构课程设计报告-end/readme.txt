@@ -1,0 +1,6 @@
+请使用版本5.12及以上的Qt
+run.zip包含可执行文件
+source_code包含Qt项目源码，打开后请先清理和构建
+doucument和report为设计文档和报告封面
+
+详细的使用请参考使用说明.docx
